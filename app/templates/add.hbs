@@ -1,0 +1,11 @@
+<form class="col-md-8 col-md-offset-2" {{action "createNew" on="submit"}}>
+  <div class="form-group">
+    <label class="form-control-label">Title</label>
+    {{input class="form-control" placeholder="Post title..." value=title type="text"}} <!-- the title -->
+  </div>
+  <div class="form-group">
+    <label class="form-control-label">Content</label>
+    {{textarea class="form-control" placeholder="Post content..." value=body type="password"}} <!-- the content -->
+  </div>
+  <button type="submit" class="btn btn-primary">Save</button>
+</form>
